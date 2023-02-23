@@ -1,0 +1,28 @@
+# {'red': 3, 'green': 5, 'black': 5, 'white': 5}
+a={1: 'red', 2: 'green', 3: 'black', 4: 'white', 5: 'black'}
+d={}
+for i in a:
+    for j in a[i]:
+        # print(j)
+        # print(a[i])
+        c=len(a[i])
+        d.update({a[i]:c})
+print(d)
+        
+        
+
+a={'1': 'Austin Little', '2': 'Natasha Howard', '3': 'Alfred Mullins', '4': 'Jamie Rowe'}
+# {'Austin Little': 13, 'Natasha Howard': 14, 'Alfred Mullins': 14, 'Jamie Rowe': 10}
+d={}
+for i in a:
+    for j in a[i]:
+        c=len(a[i])
+        d.update({a[i]:c})
+print(d)
+        
+
+
+
+# {'1': 'Austin Little', '2': 'Natasha Howard', '3': 'Alfred Mullins', '4': 'Jamie Rowe'}
+# Length of dictionary values:
+# {'Austin Little': 13, 'Natasha Howard': 14, 'Alfred Mullins': 14, 'Jamie Rowe': 10}
