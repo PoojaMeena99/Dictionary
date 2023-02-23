@@ -1,0 +1,51 @@
+['f']
+['f', 'i']
+['f', 'i', 'g', 'd', 'c']
+a={'a': 5, 'b': 14, 'c': 32, 'd': 35, 'e': 24, 'f': 100, 'g': 57, 'h': 8, 'i': 100}
+b=[]
+m1=0
+m2=0
+m3=0
+for i in a:
+    j=0
+    for j in a:
+        if a[i]>max:
+            b.append(a[j])
+        if a[j]>m2 and a[j]!=max:
+            b.append(a[j])
+        if   a[j]>m3 and a[j]!=max and a[j]!=m2 :
+            b.append(a[i])
+print(b)    
+
+
+
+
+
+
+
+
+
+a=[45,65,84,37,90,95,78,83,99,89,53]
+# # a=[78,22,33,45,26,13,32]
+i=0
+max=0
+m2=0
+m3=0
+while i<len(a):
+    j=0
+    while j<len(a):
+        if a[j]>max:
+            max=a[j]
+        elif a[j]>m2 and a[j]!=max:
+            m2=a[j]
+        elif   a[j]>m3 and a[j]!=max and a[j]!=m2  :
+            m3=a[j]
+        j+=1
+    i+=1    
+print(max, m2,m3)
+# print(m2)
+print(m3)
+
+
+
+h
