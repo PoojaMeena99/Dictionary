@@ -1,0 +1,62 @@
+
+dict={"a":{"x":[1,2],
+            "y":[3,4]},
+    "b":{"w":[7,9],
+        "2":[10,11]
+    }
+}
+
+
+num={"n1":[2,3,1],"n2":[5,1,2],"n3":[3,2,4]}
+for i in num:
+    # print(i)
+    for j in num:
+        # print(num[i])
+        # print(num[j])
+        # print(j)
+        if num[i]<=num[j]:
+            num[i],num[j]=num[j],num[i]
+print(num)            
+
+
+name="pooja"
+a={}
+for i in name:
+    print(i)
+    c=0
+    for j in name:
+        if i==j:
+            c+=1
+            a[i]=c
+print(a)        
+    
+
+
+a={"data1":100,"data2":-54,"data3":247}
+sum(=0
+for i in a.values():
+    sum=sum+i
+print(sum)    
+
+
+a={18:100,75:-54,57:247}
+sum=0
+for i in a.keys():
+    sum=sum+i
+print(sum)    
+
+
+
+a={"ball":"red","bat":4,"wickets":8,"ball":"green","bat":3}
+b={}
+temp=[]
+res=dict()
+for key,val in a.items():
+    if val not in temp:
+        temp.append(val)
+        res[key]=val
+        b.append({temp:res})
+print(b)
+# print(res)
+
+
